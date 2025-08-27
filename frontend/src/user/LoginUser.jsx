@@ -29,7 +29,7 @@ export default function LoginUser() {
     <div className="login-page">
       <div className="login-wrapper">
         <div className="login-box">
-          <h2>User Login</h2>
+          {/* <h2>User Login</h2> */}
           <form onSubmit={onSubmit}>
             <input type="text" placeholder="Username" value={username} onChange={(e)=>setUsername(e.target.value)} required/>
             <input type="password" placeholder="Password" value={password} onChange={(e)=>setPassword(e.target.value)} required/>

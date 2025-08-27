@@ -7,7 +7,7 @@ export default function ForgotUser() {
 
   return (
     <div className="page">
-      <h1>Forgot Password</h1>
+      {/* <h1>Forgot Password</h1> */}
       {!sent ? (
         <form onSubmit={onSubmit} className="forgot-form">
           <input type="email" placeholder="Enter your email" value={email} onChange={(e)=>setEmail(e.target.value)} required/>
