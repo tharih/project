@@ -8,8 +8,8 @@ export default function Sidebar() {
       <ul className="nav-links">
         <li><NavLink to="/" end>🏠 Home</NavLink></li>
         <li><NavLink to="/dashboard">📋 Dashboard</NavLink></li>
-        <li><NavLink to="/train-machine">📦 Train Machine</NavLink></li>
-        <li><NavLink to="/test-machine">🧪 Test Machine</NavLink></li>
+        {/* <li><NavLink to="/train-machine">📦 Train Machine</NavLink></li> */}
+        {/* <li><NavLink to="/test-machine">🧪 Test Machine</NavLink></li> */}
         <li><NavLink to="/emotion-detection">😃 Emotion Detection</NavLink></li>
         <li className="logout"><button
     onClick={() => {

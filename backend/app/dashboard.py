@@ -1,4 +1,3 @@
-# backend/app/dashboard.py
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 from datetime import datetime, timedelta
@@ -67,7 +66,7 @@ def attendance_daily(days: int = 7, db: Session = Depends(get_db), _: Account = 
         .filter(Attendance.timestamp >= start, Attendance.timestamp <= end)
         .all()
     )
-    # Bucket by day (UTC)
+    
     buckets: Dict[str, int] = {}
     for i in range(days):
         d = start + timedelta(days=i)
